@@ -25,7 +25,7 @@ pitch5 = rand_pitch % 2
 pitch6 = rand_pitch * 4
 pitch7 = rand_pitch * 2
 pitch8 = rand_pitch * 1.5
-pitch9 = rand_pitch
+pitch9 = rand_pitch - 15
 pitch10 = rand_pitch + 20
 
   $a = RPG::SE.new("a.mp3", volume, pitch)
