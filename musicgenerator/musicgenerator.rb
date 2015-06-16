@@ -5,10 +5,10 @@
 //
 // Instructions---- 
 // Place all the music files into the SE folder.
-// Call the script call: Musica.play(loop)
+// Call the script call: GenerateMusic.play(loop)
 // Set loop to true if you want the music to repeat
 // Set loop to false if you want it to terminate
-// Example Script call Musica.play(true).
+// Example Script call GenerateMusic.play(true).
 =end
 
 num = rand(100) 
@@ -64,4 +64,4 @@ else
     $sequence.sample.play
   end
 end
-Musica = Result.new
+GenerateMusic = Result.new
