@@ -6,7 +6,9 @@
 // Instructions---- 
 // Place all the music files into the SE folder.
 // Call the script call: Musica.play(loop)
-// Set loop to true or false if you want it to continue.
+// Set loop to true if you want the music to repeat
+// Set loop to false if you want it to terminate
+// Example Script call Musica.play(true).
 =end
 
 num = rand(100) 
