@@ -1,1 +1,1 @@
-$game_switches[1] = false
+$game_switches[1] = true
