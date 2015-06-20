@@ -6,7 +6,7 @@
 #
 # 
 #==============================================================================
-
+=begin
 $music = Dir["Audio/BGM/*"]
 
 class Music
@@ -20,7 +20,8 @@ class Music
 end
 RandomMusic = Music.new
 RandomMusic.song = $music.sample[10..500]
-
+=end
+this_that = true
 
 
 
