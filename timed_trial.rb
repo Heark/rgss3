@@ -29,7 +29,7 @@ if timed_trial == true
 def create_method(name, &block)
   self.class.send(:define_method, name, &block)
 end
-create_method(:thea) { $game_message.add("Trial ended, demo is over.") }
+create_method(:barbara) { $game_message.add("Trial ended, demo is over.") }
 create_method(:wilma) {  SceneManager.exit }
 if $disable_save == true
   if File.exist?("Save01.rvdata2")
@@ -119,7 +119,7 @@ module DataManager
   TDD::Timer.call_after_frames(
     :frames   => 3600*$minutes,
     :observer => self,
-    :method   => :thea,
+    :method   => :barbara,
     :params   => nil
   )
   TDD::Timer.call_after_frames(
