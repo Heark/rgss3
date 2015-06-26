@@ -12,6 +12,54 @@
   
   Credit:
   Galenmereth & Yuuta Kirishima / Dexter
+  #==============================================================================
+# ** TDD::Timer
+#------------------------------------------------------------------------------
+# Version:  1.0.1
+# Date:     06/12/2014
+# Author:   Galenmereth / Tor Damian Design
+# 
+# Changelog
+# =========
+# * 1.0.1 - Added * operand for any type of parameter passing.
+#
+# Description
+# ===========
+# This script is for use within other scripts. It lets you call a method for
+# an object after X defined frames. Super lightweight, and hooks into
+# Scene_Base frame update with a simple alias
+#
+# How to use
+# ==========
+# TDD::Timer.call_after_frames(
+#   :frames   => Number,  - Number of frames to wait before calling :method
+#   :observer => Object,  - Object for which method should be called
+#   :method   => :symbol, - Method to call on :observer Object
+#   :params   => Object,  - OPTIONAL: Any object you wish to pass to the :method
+# )
+#
+# Example
+# =======
+# TDD::Timer.call_after_frames(
+#   :frames   => 60,
+#   :observer => self,
+#   :method   => :play_ding_dong_sfx,
+#   :params   => {ding: dong}
+# )
+#
+# You can pass the above params in any order you wish, and :params can be
+# omitted.
+#
+# Credit:
+# =======
+# - Galenmereth / Tor Damian Design
+#
+# License:
+# ========
+# Free for non-commercial and commercial use. Credit greatly appreciated but
+# not required. Share script freely with everyone, but please retain this
+# description area unless you change the script completely. Thank you.
+#=============================================================================
 =end
 # If set to false, script won't activate
 timed_trial = true
